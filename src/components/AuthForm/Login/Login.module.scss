@@ -1,17 +1,21 @@
 .loginPage {
-	& .loginForm {	
+
+	width: 100vh;
+	height: 100vh;
+
+	& .loginForm {
 		position: absolute;
 		margin: 0 auto;
 		top: calc(50vh - 200px);
 		left: calc(50vw - 200px);
-		width: 400px;
-		height: 400px;
+		width: 500px;
+		height: 500px;
 		border-radius: 10px;
-		background: rgba(142, 81, 81, 0.25);
+		background: white;
 		box-shadow: 0px 0px 38px rgba(151, 14, 14, 0.25);
 		padding: 30px;
 		box-sizing: border-box;
-
+		z-index: 5;
 
 		& .loginTitle {
 			text-align: center;
@@ -74,4 +78,16 @@
 	&::placeholder {
 		text-align: center;
 	}
+}
+
+.loginErrors {
+	text-align: center;
+	margin-bottom: 10px;
+	color: red;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.hasError {
+	border: red;
 }
