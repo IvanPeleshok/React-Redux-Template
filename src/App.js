@@ -4,8 +4,7 @@ import "./App.scss";
 import { Route, Switch } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar/NavBar";
-import { Block } from "./components/Block";
-
+import { ImageUpload } from "./components/ImageUpload/ImageUpload";
 
 const App = () => {
   return (
@@ -13,7 +12,7 @@ const App = () => {
       <NavBar />
       <Switch>
         <div className="container">
-          <Route path="/" exact component={Block} />
+          <Route path="/" exact component={ImageUpload} />
         </div>
       </Switch>
     </>
