@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Login from '../AuthForm/Login/Login';
+import { AuthForm } from '../AuthForm/AuthForm';
 import s from './NavBar.module.scss';
 
 
@@ -20,13 +20,13 @@ export const NavBar = () => {
                     </div>
                     <ul className={s.menu}>
                         <li className={s.item} onClick={toggleLogin}>
-                            Login
+                            Вход
                         </li>
                     </ul>
                 </div>
             </header>
 
-            {isOpen && <Login />}
+            {isOpen && <AuthForm />}
         </>
     )
 }
